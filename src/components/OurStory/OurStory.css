@@ -1,6 +1,6 @@
 .our-story {
   background-color: #8b6342;
-  padding: 4rem 0 12rem 0;
+  padding: 3rem 0 12rem 0;
   color: #f5ebe0;
   scroll-margin-top: 80px;
   position: relative;
@@ -43,7 +43,7 @@
 }
 
 .story-title {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
   font-style: normal;
