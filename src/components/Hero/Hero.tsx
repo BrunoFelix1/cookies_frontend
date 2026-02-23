@@ -5,26 +5,29 @@ const CAROUSEL_IMAGES = [
   {
     src: "/cookiesOnTable.jpg",
     alt: "Delicious cookies on a table",
+    eyebrow: "Artesanal & Fresquinho",
     title: "Cookies Artesanais",
-    subtitle: "Feitos com amor",
+    tagline: "Uma mordida de felicidade",
     description:
-      "Descubra o sabor autêntico dos nossos cookies artesanais, preparados diariamente com ingredientes selecionados e muito carinho.",
+      "Preparados diariamente com ingredientes selecionados e muito carinho, cada cookie é uma experiência única.",
   },
   {
     src: "/Focaccia.jpg",
     alt: "Focaccia artesanal",
-    title: "Focaccia Deliciosa",
-    subtitle: "Receita tradicional",
+    eyebrow: "Receita Tradicional",
+    title: "Focaccia Artesanal",
+    tagline: "Crocante por fora, macia por dentro",
     description:
-      "Nossa focaccia é preparada com azeite premium e temperos selecionados, resultando em uma textura macia e sabor incomparável.",
+      "Feita com azeite premium e temperos selecionados, nossa focaccia tem textura macia e sabor incomparável.",
   },
   {
     src: "/cafeComCookie.png",
     alt: "Café delicioso",
+    eyebrow: "Seleção Especial",
     title: "Cafés Especiais",
-    subtitle: "Seleção premium",
+    tagline: "O ritual perfeito para o seu dia",
     description:
-      "Conheça nossa seleção exclusiva de cafés de origem, torrados artesanalmente para trazer o melhor sabor em cada xícara.",
+      "Grãos de origem única, torrados artesanalmente para entregar o melhor sabor em cada xícara.",
   },
 ];
 
@@ -104,12 +107,15 @@ export default function Hero() {
           key={`${currentImageIndex}-${direction}`}
           data-direction={direction}
         >
+          <span className="hero-eyebrow">
+            {CAROUSEL_IMAGES[currentImageIndex].eyebrow}
+          </span>
           <h1 className="hero-title">
             {CAROUSEL_IMAGES[currentImageIndex].title}
-            <span className="hero-subtitle">
-              {CAROUSEL_IMAGES[currentImageIndex].subtitle}
-            </span>
           </h1>
+          <p className="hero-tagline">
+            {CAROUSEL_IMAGES[currentImageIndex].tagline}
+          </p>
           <p className="hero-description">
             {CAROUSEL_IMAGES[currentImageIndex].description}
           </p>
