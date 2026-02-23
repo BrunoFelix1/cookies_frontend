@@ -32,54 +32,111 @@
   padding-right: 2rem;
 }
 
+.story-eyebrow {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(245, 235, 224, 0.5);
+  margin-bottom: 1rem;
+}
+
 .story-title {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 2.8rem;
   font-weight: 700;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  line-height: 1.2;
+  margin-bottom: 1.75rem;
+  color: #f5ebe0;
 }
 
 .story-text {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 0.95rem;
+  line-height: 1.9;
   margin-bottom: 1rem;
-  opacity: 0.95;
+  color: rgba(245, 235, 224, 0.65);
+  font-weight: 400;
 }
 
 .story-button {
-  background-color: #d4a574;
-  color: #2c2420;
-  border: none;
-  padding: 0.875rem 2rem;
-  font-size: 1rem;
+  background: transparent;
+  color: #f5ebe0;
+  border: 1px solid rgba(245, 235, 224, 0.5);
+  padding: 0.8rem 2rem;
+  font-size: 0.72rem;
   font-weight: 600;
-  border-radius: 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 4px;
   cursor: pointer;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   transition:
-    background-color 0.3s ease,
-    transform 0.2s ease;
+    background 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .story-button:hover {
-  background-color: #c49563;
-  transform: translateY(-2px);
+  background: rgba(245, 235, 224, 0.1);
+  border-color: #f5ebe0;
+}
+
+.story-image-wrapper {
+  position: relative;
+  margin: 1.5rem 0 0 1.5rem;
+}
+
+.story-image-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: -1.5rem 1.5rem 1.5rem -1.5rem;
+  background-color: #3d2817;
+  border-radius: 4px;
+  z-index: 0;
 }
 
 .story-image {
+  position: relative;
+  z-index: 1;
   width: 100%;
-  height: 350px;
-  background-color: #6b4423;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* Placeholder para imagem do chef */
+  height: 460px;
+  border-radius: 4px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
-.story-image::after {
-  content: "Chef Image";
-  color: rgba(255, 255, 255, 0.3);
-  font-size: 1.5rem;
+.story-image-badge {
+  position: absolute;
+  bottom: -1.5rem;
+  right: -1.5rem;
+  z-index: 2;
+  background-color: #f5ebe0;
+  color: #6b4423;
+  border-radius: 4px;
+  padding: 1rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.story-badge-number {
+  font-family: "Playfair Display", serif;
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+.story-badge-label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 0.3rem;
+  opacity: 0.65;
 }
 
 @media (max-width: 968px) {
@@ -100,7 +157,25 @@
     padding-right: 0;
   }
 
+  .story-image-wrapper {
+    margin: 1rem 0 2rem 1rem;
+  }
+
+  .story-image-wrapper::before {
+    inset: -1rem 1rem 1rem -1rem;
+  }
+
   .story-image {
     height: 300px;
+  }
+
+  .story-image-badge {
+    bottom: -1rem;
+    right: -1rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .story-badge-number {
+    font-size: 1.6rem;
   }
 }

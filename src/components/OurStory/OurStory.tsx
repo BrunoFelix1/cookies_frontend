@@ -5,25 +5,28 @@ export default function OurStory() {
     <section className="our-story" id="about">
       <div className="our-story-container">
         <div className="story-content">
-          <h2 className="story-title">Our Story</h2>
+          <span className="story-eyebrow">Nossa História</span>
+          <h2 className="story-title">Feitos com carinho, desde o início</h2>
           <p className="story-text">
-            We are passionate bakery, that has been baking and delivering
-            quality cookies for over 15 years. Happiness has been our trademark
-            since the beginning and promises to be one of many reasons why
-            customers love and trust our product and food franchise.
+            Somos uma padaria apaixonada pelo que fazemos, assando e entregando
+            cookies de qualidade há mais de 15 anos. A felicidade sempre foi
+            nossa marca registrada e continua sendo um dos muitos motivos pelos
+            quais nossos clientes amam e confiam nos nossos produtos.
           </p>
           <p className="story-text">
-            We provide the best sweet crumbs possible. We believe in quality and
-            using only the GREENEST INGREDIENTS possible to provide fresh and
-            natural food.
+            Acreditamos na qualidade e no uso dos ingredientes mais frescos e
+            naturais possíveis, para oferecer uma experiência única a cada
+            mordida.
           </p>
-          <button className="story-button">Saiba Mais</button>
+          <button className="story-button">Saiba Mais →</button>
         </div>
-        <img
-          src="/chefcooking.jpg"
-          alt="Chef Bugududa"
-          className="story-image"
-        />
+        <div className="story-image-wrapper">
+          <img
+            src="/chefcooking.jpg"
+            alt="Chef Bugududa"
+            className="story-image"
+          />
+        </div>
       </div>
     </section>
   );
