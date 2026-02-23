@@ -47,24 +47,34 @@
 .nav-link {
   color: #6b4423;
   text-decoration: none;
-  font-weight: 500;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
   transition: color 0.3s ease;
   position: relative;
+  padding-bottom: 4px;
 }
 
 .nav-link:hover,
 .nav-link.active {
-  color: #d4a574;
+  color: #d2691e;
 }
 
-.nav-link.active::after {
+.nav-link::after {
   content: "";
   position: absolute;
-  bottom: -4px;
+  bottom: 0;
   left: 0;
-  width: 100%;
+  width: 0;
   height: 2px;
-  background-color: #d4a574;
+  background-color: #d2691e;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
 }
 
 @media (max-width: 768px) {
