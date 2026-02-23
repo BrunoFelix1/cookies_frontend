@@ -1,0 +1,106 @@
+.our-story {
+  background-color: #8b6342;
+  padding: 4rem 0 12rem 0;
+  color: #f5ebe0;
+  scroll-margin-top: 80px;
+  position: relative;
+}
+
+.our-story::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100' preserveAspectRatio='none'%3E%3Cpath fill='%23f5ebe0' d='M0,30 C360,70 720,10 1080,40 C1260,55 1350,30 1440,40 L1440,100 L0,100 Z'/%3E%3C/svg%3E")
+    no-repeat bottom;
+  background-size: cover;
+  pointer-events: none;
+}
+
+.our-story-container {
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.story-content {
+  padding-right: 2rem;
+}
+
+.story-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.story-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  opacity: 0.95;
+}
+
+.story-button {
+  background-color: #d4a574;
+  color: #2c2420;
+  border: none;
+  padding: 0.875rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.story-button:hover {
+  background-color: #c49563;
+  transform: translateY(-2px);
+}
+
+.story-image {
+  width: 100%;
+  height: 350px;
+  background-color: #6b4423;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Placeholder para imagem do chef */
+}
+
+.story-image::after {
+  content: "Chef Image";
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 1.5rem;
+}
+
+@media (max-width: 968px) {
+  .our-story {
+    padding: 3rem 0 4rem 0;
+  }
+
+  .our-story::after {
+    height: 60px;
+  }
+
+  .our-story-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .story-content {
+    padding-right: 0;
+  }
+
+  .story-image {
+    height: 300px;
+  }
+}

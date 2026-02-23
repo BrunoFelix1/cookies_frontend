@@ -1,0 +1,93 @@
+.featured-cookies {
+  background-color: #f5ebe0;
+  padding: 6rem 0 4rem 0;
+  scroll-margin-top: 80px;
+  position: relative;
+}
+
+.featured-cookies::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100' preserveAspectRatio='none'%3E%3Cpath fill='%23f5ebe0' d='M0,0 L0,70 C360,40 720,80 1080,60 C1260,50 1350,65 1440,55 L1440,0 Z' opacity='0.7'/%3E%3C/svg%3E")
+    no-repeat top;
+  background-size: cover;
+  pointer-events: none;
+}
+
+.featured-cookies-container {
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c2420;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.cookies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cookie-card {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.cookie-card:hover {
+  transform: translateY(-10px);
+}
+
+.cookie-image {
+  width: 150px;
+  height: 150px;
+  background-color: #d4a574;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Placeholder para imagem do cookie */
+}
+
+.cookie-image::after {
+  content: "🍪";
+  font-size: 3rem;
+  opacity: 0.5;
+}
+
+.cookie-name {
+  font-size: 1.125rem;
+  color: #2c2420;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .featured-cookies {
+    padding: 5rem 0 3rem 0;
+  }
+
+  .featured-cookies::before {
+    height: 60px;
+  }
+
+  .cookies-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .cookie-image {
+    width: 120px;
+    height: 120px;
+  }
+}

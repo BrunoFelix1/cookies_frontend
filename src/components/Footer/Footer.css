@@ -1,0 +1,117 @@
+.footer {
+  background-color: #3d2817;
+  color: #f5ebe0;
+  padding: 3rem 0 1rem;
+  scroll-margin-top: 80px;
+}
+
+.footer-container {
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #d4a574;
+}
+
+.footer-text {
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #d4a574;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2c2420;
+  text-decoration: none;
+  font-weight: bold;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.social-icon:hover {
+  background-color: #c49563;
+  transform: translateY(-3px);
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 25px;
+  background-color: #f5ebe0;
+  color: #2c2420;
+  font-size: 0.938rem;
+}
+
+.newsletter-input::placeholder {
+  color: #8b6342;
+  opacity: 0.7;
+}
+
+.newsletter-button {
+  width: 45px;
+  height: 45px;
+  background-color: #d4a574;
+  border: none;
+  border-radius: 50%;
+  color: #2c2420;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter-button:hover {
+  background-color: #c49563;
+  transform: translateY(-2px);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(245, 235, 224, 0.2);
+  max-width: 1200px;
+  margin: 0 auto;
+  opacity: 0.8;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
