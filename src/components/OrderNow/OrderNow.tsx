@@ -4,9 +4,21 @@ export default function OrderNow() {
   return (
     <section className="order-now">
       <div className="order-now-container">
-        <h2 className="section-title">Order Now</h2>
-        <p className="order-subtitle">Load one mouthsob on your order now</p>
-        <button className="order-button">Order Now</button>
+        <span className="order-eyebrow">
+          Feito com amor, entregue com cuidado
+        </span>
+        <h2 className="order-title">Pronto para experimentar?</h2>
+        <p className="order-subtitle">
+          Encomende agora e receba cookies artesanais fresquinhos na sua porta.
+        </p>
+        <a
+          href="https://wa.me/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="order-button"
+        >
+          Fazer Pedido
+        </a>
       </div>
     </section>
   );

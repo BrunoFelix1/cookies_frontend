@@ -1,60 +1,99 @@
 .order-now {
-  background-color: #f5ebe0;
-  padding: 4rem 0 12rem 0;
+  background-color: #5c3317;
+  padding: 5rem 0 8rem 0;
   text-align: center;
   position: relative;
+  overflow: hidden;
 }
 
+/* Curva de entrada removida — Gallery::after já faz a transição */
+
+/* Curva de saída (para o Footer) */
 .order-now::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   width: 100%;
-  height: 120px;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120' preserveAspectRatio='none'%3E%3Cpath fill='%233d2817' d='M0,60 C240,100 480,30 720,60 C960,90 1200,40 1440,70 L1440,120 L0,120 Z'/%3E%3C/svg%3E")
+  height: 100px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100' preserveAspectRatio='none'%3E%3Cpath fill='%235c3317' d='M0,50 C240,80 480,20 720,50 C960,80 1200,20 1440,50 L1440,100 L0,100 Z'/%3E%3C/svg%3E")
     no-repeat bottom;
   background-size: cover;
   pointer-events: none;
+  z-index: 1;
 }
 
+/* Luz ambiente central */
 .order-now-container {
   margin: 0 auto;
   padding: 0 2rem;
+  max-width: 700px;
+  position: relative;
+  z-index: 2;
+}
+
+.order-eyebrow {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #d4a574;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.order-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 1.2rem 0;
+  letter-spacing: -0.5px;
+  line-height: 1.15;
 }
 
 .order-subtitle {
-  font-size: 1.125rem;
-  color: #6b4423;
-  margin-bottom: 2rem;
-  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 2.8rem;
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 .order-button {
+  display: inline-block;
   background-color: #d4a574;
-  color: #2c2420;
+  color: #1e1410;
   border: none;
   padding: 1rem 3rem;
-  font-size: 1.125rem;
-  font-weight: 600;
-  border-radius: 25px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-radius: 50px;
   cursor: pointer;
+  text-decoration: none;
   transition:
-    background-color 0.3s ease,
-    transform 0.2s ease;
+    background-color 0.25s ease,
+    transform 0.2s ease,
+    box-shadow 0.25s ease;
+  box-shadow: 0 4px 20px rgba(212, 165, 116, 0.25);
 }
 
 .order-button:hover {
-  background-color: #c49563;
-  transform: translateY(-2px);
+  background-color: #e8b98a;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(212, 165, 116, 0.4);
 }
 
 @media (max-width: 768px) {
   .order-now {
-    padding: 3rem 0 5rem 0;
+    padding: 5rem 0 7rem 0;
   }
 
-  .order-now::after {
-    height: 80px;
+  .order-title {
+    font-size: 2rem;
   }
 }
