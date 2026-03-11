@@ -88,7 +88,7 @@ export default function Header() {
           <img
             className="logo-icon"
             src="/logo_invertida.png"
-            alt="Bugududa Cookies logo"
+            alt="Cookie Shop logo"
             onClick={handleLogoClick}
           />
         </div>

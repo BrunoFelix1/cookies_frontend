@@ -7,8 +7,8 @@ export default function Footer() {
       <div className="footer-container">
         <div className="footer-section footer-brand">
           <img
-            src="/logoBuguDudaFooter.png"
-            alt="BuguDuda Cookies"
+            src="/logo-footer.png"
+            alt="Cookie Shop"
             className="footer-logo"
           />
           <p className="footer-brand-text">
@@ -22,8 +22,8 @@ export default function Footer() {
           <p className="footer-text">
             📍 Avenida Amazonas, 565 - Universitário, Caruaru-PE
           </p>
-          <p className="footer-text">📧 oi@bugududa.com.br</p>
-          <p className="footer-text">📱 (81) 99115-0401</p>
+          <p className="footer-text">📧 contato@cookieshop.com.br</p>
+          <p className="footer-text">📱 (81) 99999-9999</p>
         </div>
 
         <div className="footer-section">
@@ -60,7 +60,9 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} BuguDuda · Feito com 🍪 e muito amor</p>
+        <p>
+          © {new Date().getFullYear()} Cookie Shop · Feito com 🍪 e muito amor
+        </p>
       </div>
     </footer>
   );

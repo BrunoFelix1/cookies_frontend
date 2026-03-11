@@ -21,11 +21,7 @@ export default function OurStory() {
           <button className="story-button">Saiba Mais →</button>
         </div>
         <div className="story-image-wrapper">
-          <img
-            src="/chefcooking.jpg"
-            alt="Chef Bugududa"
-            className="story-image"
-          />
+          <img src="/chefcooking.jpg" alt="Chef" className="story-image" />
         </div>
       </div>
     </section>
