@@ -11,12 +11,7 @@ export default function OrderNow() {
         <p className="order-subtitle">
           Encomende agora e receba cookies artesanais fresquinhos na sua porta.
         </p>
-        <a
-          href="https://wa.me/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="order-button"
-        >
+        <a target="_blank" rel="noopener noreferrer" className="order-button">
           Fazer Pedido
         </a>
       </div>
